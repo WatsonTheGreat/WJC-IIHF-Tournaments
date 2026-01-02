@@ -1,14 +1,84 @@
-<h2>IIHF Tournaments</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IIHF Tournaments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h3>U20</h3>
-<a href="U20/2026/index.html">2026</a>
-<a href="U20/2027/index.html">2027</a>
+<!-- HEADER -->
+<header class="site-header">
+    <img src="IIHF-logo.png" alt="IIHF Logo" class="iihf-logo">
+    <div class="header-text">
+        <h1>IIHF Hockey Tournaments</h1>
+        <p>World Championships • Olympics • U20</p>
+    </div>
 
-<h3>Men</h3>
-<a href="Men/2026/index.html">2026</a>
+    <!-- YEAR SELECTOR -->
+    <select id="yearSelector" class="year-selector">
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+    </select>
+</header>
 
-<h3>Women</h3>
-<a href="Women/2026/index.html">2026</a>
+<!-- MAIN -->
+<main class="container">
 
-<h3>Olympics</h3>
-<a href="Olympics/2026/index.html">2026</a>
+    <!-- WJC -->
+    <section class="tournament-card">
+        <h2>World Junior Championship</h2>
+        <p class="subtitle">U20 Tournament</p>
+
+        <div class="tournament-grid">
+            <a class="tournament-box" data-section="U20" data-link="index">Group Stage</a>
+            <a class="tournament-box" data-section="U20" data-link="playoffs">Playoffs</a>
+            <a class="tournament-box" data-section="U20" data-link="final">Final</a>
+        </div>
+    </section>
+
+    <!-- MEN -->
+    <section class="tournament-card">
+        <h2>Men’s World Championship</h2>
+        <p class="subtitle">Elite Tournament</p>
+
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="mens">Groups</a>
+            <a class="tournament-box" data-link="mens-playoffs">Playoffs</a>
+            <a class="tournament-box" data-link="mens-final">Final</a>
+        </div>
+    </section>
+
+    <!-- WOMEN -->
+    <section class="tournament-card">
+        <h2>Women’s World Championship</h2>
+        <p class="subtitle">Top Division</p>
+
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="womens">Groups</a>
+            <a class="tournament-box" data-link="womens-playoffs">Playoffs</a>
+            <a class="tournament-box" data-link="womens-final">Final</a>
+        </div>
+    </section>
+
+    <!-- OLYMPICS -->
+    <section class="tournament-card olympics">
+        <h2>Olympic Ice Hockey</h2>
+        <p class="subtitle">International Tournament</p>
+
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="olympics-mens">Men</a>
+            <a class="tournament-box" data-link="olympics-womens">Women</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>© IIHF Tournaments Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
